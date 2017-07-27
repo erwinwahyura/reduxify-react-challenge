@@ -3,8 +3,29 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 0.5s linear;
+  animation: App-logo-spin infinite 5.5s linear;
   height: 120px;
+  /*position: relative;*/
+}
+
+.App-logo2 {
+  animation: App-logo-spin2 infinite 1s linear;
+  height: 50px;
+  /*position: relative;*/
+}
+.App-logoY {
+  /*animation: App-logo-spin-Y infinite 3.5s linear;*/
+  height: 100px;
+  /*position: relative;*/
+}
+/*.App-logoY:hover {
+  animation: App-logo-spin-Y infinite 3.5s linear;
+  height: 100px;
+  /*position: relative;
+}*/
+.App-logoY:hover {
+  animation: App-logo-spin-XYZ infinite 3.5s linear;
+  height: 100px;
   /*position: relative;*/
 }
 
@@ -19,12 +40,43 @@
   font-size: large;
 }
 
+@keyframes App-logo-spin-XYZ {
+  0% { transform: rotateY(0deg) rotateZ(0deg) scale(1); left: 0px; }
+  25% { transform: rotateY(-30deg) rotateZ(-15deg) scale(1); left: 0px; }
+  50% { transform: rotateY(0deg) rotateZ(0deg) scale(1); left: 0px}
+  75% { transform: rotateY(30deg) rotateZ(15deg) scale(1); left: 0px}
+  100% { transform: rotateY(0deg) rotateZ(0deg) scale(1); left: 0px}
+  /*from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }*/
+}
+
+@keyframes App-logo-spin-Y {
+  0% { transform: rotateY(0deg) scale(1); left: 0px; }
+  25% { transform: rotateY(-50deg) scale(1); left: 0px; }
+  50% { transform: rotateY(0deg) scale(1); left: 0px}
+  75% { transform: rotateY(50deg) scale(1); left: 0px}
+  100% { transform: rotateY(0deg) scale(1); left: 0px}
+  /*from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }*/
+}
+
 @keyframes App-logo-spin {
-  0% { transform: rotate(10deg) scale(1); left: 0px; }
+  0% { transform: rotate(0deg) scale(1); left: 0px; }
   25% { left: 100px; }
-  50% { transform: rotate(30deg) scale(1); left: 0px; }
+  50% { transform: rotate(180deg) scale(1); left: 0px; }
   75% { left: -100px; }
-  100% { transform: rotate(60deg) scale(1); left: 0px}
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  100% { transform: rotate(360deg) scale(1); left: 0px}
+  /*from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }*/
+}
+
+@keyframes App-logo-spin2 {
+  0% { transform: rotate(-30deg) scale(1); left: 0px; }
+  25% { left: 100px; }
+  40% { transform: rotate(30deg) scale(1); left: 0px; }
+  60% { transform: rotate(0deg) scale(1); left: 0px; }
+  75% { left: -100px; }
+  100% { transform: rotate(0deg) scale(1); left: 0px}
+  /*from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }*/
 }
